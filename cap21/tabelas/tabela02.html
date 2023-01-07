@@ -17,7 +17,7 @@
 
         td, th{
             border: 1px solid black;
-            padding: 10px;
+            padding: 8px;
         }
         thead, tfoot{
             background-color: gray;
@@ -31,6 +31,19 @@
             
         }
 
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        
+
+
     </style>
 </head>
 
@@ -38,10 +51,11 @@
     <h1>Tabelas grandes</h1>
 
     <table>
+        <caption>População das Unidas Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px">População</th>
             </tr>
         </thead>
         <tbody>
@@ -64,7 +78,7 @@
 
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
+                    <th scope="row">Total de Habitantes</th>
                     <td class="num"><strong>98 032 146</strong></td>
                 </tr>
             </tfoot>
