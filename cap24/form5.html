@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Exemplo de Formalário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>Qual é o seu time?</legend>
+            <input type="radio" name="time" id="ifla"> <label for="ifla">Flamengo</label><br>
+            <input type="radio" name="time" id="ivas"> <label for="ivas">Vasco</label><br>
+            <input type="radio" name="time" id="iflu"> <label for="iflu">Fluminense</label><br>
+            <input type="radio" name="time" id="ibot"> <label for="ibot">Botafogo</label><br>
+        </fieldset>
+
+        <fieldset><legend>Rede Social Preferida</legend>
+        
+            <input type="checkbox" name="facebook" id="iface"><label for="iface">Facebook</label><br>
+            <input type="checkbox" name="instagram" id="iinstagram"><label for="iinstagram">Instagram</label><br>
+            <input type="checkbox" name="twitter" id="itwitter"><label for="itwitter">twitter</label><br>
+            <input type="checkbox" name="youtube" id="iyoutube"><label for="iyoutube">Youtube</label><br>
+        
+        </fieldset>
+
+
+
+        <p>
+            <input type="button" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+</body>
+
+</html>
